@@ -1,0 +1,36 @@
+$screen-sizes: (
+        desktop-large: 1920,
+        desktop-medium: 1200,
+        tablet: 769,
+        mobile: 300,
+);
+
+@function calculateRatio($screenWidth, $referenceWidth) {
+  @return ($screenWidth / $referenceWidth);
+}
+
+@function ptr($valueInPixels, $screenType: desktop-large) {
+  $referenceWidth: map-get($screen-sizes, $screenType);
+  $ratio: calc($valueInPixels / $referenceWidth) * 100vw;
+  @return #{$ratio};
+
+}
+
+$breakpoints: (
+        desktop-large: 1920,
+        desktop-medium: 1200,
+        tablet: 769,
+        mobile: 0,
+);
+
+@mixin respond-to($breakpoint) {
+  $min-width: map-get($breakpoints, $breakpoint);
+
+  @if $min-width {
+    @media (min-width: #{$min-width}px) {
+      @content;
+    }
+  } @else {
+    @error "Unknown screen size: #{$breakpoint}.";
+  }
+}
