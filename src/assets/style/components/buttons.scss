@@ -21,3 +21,29 @@
     color: $heavy_blue;
   }
 }
+.main-cta {
+  @extend .main-parag !optional;
+  display: flex;
+  border: 2px solid $orange;
+  transition: .3s ease-in-out;
+  background-color: $orange;
+  cursor: pointer;
+
+    @include respond-to(mobile) {
+        padding: ptr(10, mobile) ptr(30, mobile);
+        border-radius: ptr(10, mobile);
+    }
+    @include respond-to(tablet) {
+        padding: ptr(10, tablet) ptr(30, tablet);
+        border-radius: ptr(10, tablet);
+    }
+    @include respond-to(desktop-medium) {
+        padding: ptr(10, desktop-large) ptr(30, desktop-large);
+        border-radius: ptr(10, desktop-large);
+    }
+
+    &:hover {
+        background-color: transparent;
+        color: $orange;
+    }
+}

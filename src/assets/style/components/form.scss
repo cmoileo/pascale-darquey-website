@@ -1,0 +1,74 @@
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+
+  @include respond-to(mobile) {
+    width: -webkit-fill-available;
+    gap: ptr(10, mobile);
+    margin: 0 ptr(30, mobile);
+    border-radius: ptr(15, mobile);
+    padding: ptr(10, mobile)
+  }
+  @include respond-to(tablet) {
+    width: 80%;
+    gap: ptr(10, tablet);
+    margin: 0 ptr(30, tablet);
+    border-radius: ptr(15, tablet);
+    padding: ptr(10, tablet)
+  }
+  @include respond-to(desktop-medium) {
+    gap: ptr(10, desktop-medium);
+    width: ptr(600, desktop-medium);
+    margin: auto;
+  }
+
+  input, textarea {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid $heavy_blue;
+    opacity: 50%;
+    background-color: transparent;
+    font-size: ptr(20, mobile);
+    color: $heavy_blue;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+
+    @include respond-to(mobile) {
+      font-size: ptr(15, mobile);
+      padding: ptr(10, mobile);
+    }
+    @include respond-to(tablet) {
+      font-size: ptr(15, tablet);
+      padding: ptr(10, tablet);
+    }
+    @include respond-to(desktop-medium) {
+      font-size: ptr(15, desktop-medium);
+      padding: ptr(15, desktop-medium);
+    }
+
+    &:focus {
+      border-bottom: 1px solid $orange;
+    }
+  }
+  input, label, textarea {
+    width: -webkit-fill-available;
+  }
+  textarea {
+    resize: none;
+    @include respond-to(mobile) {
+      height: ptr(100, mobile);
+    }
+    @include respond-to(tablet) {
+      height: ptr(100, tablet);
+    }
+    @include respond-to(desktop-medium) {
+      height: ptr(100, desktop-medium);
+    }
+  }
+
+  .main-cta {
+    margin-top: 30px;
+  }
+}
