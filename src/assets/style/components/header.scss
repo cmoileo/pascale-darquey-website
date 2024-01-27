@@ -2,15 +2,26 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: ptr(25, desktop-large) ptr($side_margin_desktop, desktop-large);
     background-color: $heavy_blue;
+    position: sticky;
+    top: 0;
 
-    ul {
+    @include respond-to(mobile) {
+        padding: ptr(20, mobile) ptr($side_margin_mobile, mobile)
+    }
+    @include respond-to(tablet) {
+        padding: ptr(20, tablet) ptr($side_margin_mobile, tablet);
+    }
+    @include respond-to(desktop-medium) {
+        padding: ptr(25, desktop-large) ptr($side_margin_desktop, desktop-large);
+    }
+
+    > ul {
         display: flex;
         align-items: center;
         @include respond-to(mobile) {
-            display: none;
             flex-direction: column;
+            display: flex;
             gap: ptr(20, mobile);
         }
         @include respond-to(tablet) {
@@ -23,18 +34,79 @@ header {
             gap: ptr(55, desktop-large);
         }
 
-        a {
-            &::after {
-                content: "";
-                display: block;
-                width: 0;
-                height: 2px;
-                background-color: $pink;
-                transition: width 0.3s ease-in-out;
+        @media screen and (max-width: 1024px) {
+            position: fixed;
+            height: 100vh;
+            width: -webkit-fill-available;
+            left: 0;
+            top: calc( ptr(40, mobile) + ptr(25, mobile));
+            padding-top: ptr(50, mobile);
+            z-index: 9;
+            background-color: $white;
+            align-items: flex-start;
+            padding-left: ptr($side_margin_mobile, mobile);
+            padding-right: ptr($side_margin_mobile, mobile);
+            transform: translateX(100%);
+            transition: .5s ease-in-out;
+            a, li {
+                color: $heavy_blue !important;
             }
-            &:hover {
-                &::after {
+            > li, >a:not(.secondary-cta){
+                width: 100%;
+                justify-content: space-between;
+                padding-bottom: ptr(20, mobile);
+                border-bottom: 2px solid $pink;
+            }
+            .has-submenu {
+                flex-direction: column;
+                align-items: flex-start;
+                p {
+                    align-self: flex-start;
+                }
+                svg {
+                    position: absolute;
+                    right: 0;
+                    top: 5px;
+                    path {
+                        stroke: $heavy_blue !important;
+                    }
+                }
+                .submenu {
+                    position: relative !important;
+                    top: 0 !important;
+                    padding: 0;
                     width: 100%;
+                    background-color: transparent;
+                    border-radius: 0;
+                    border-bottom: none !important;
+                    li {
+                        padding: 0;
+                        a {
+                            width: 100%;
+                            padding: 15px 0;
+                            border-bottom: 2px solid $pink;
+                            font-size: ptr(12, mobile);
+                            border-bottom: none !important;
+                        }
+                    }
+                }
+            }
+        }
+
+        a {
+            @include respond-to(desktop-medium) {
+                &::after {
+                    content: "";
+                    display: block;
+                    width: 0;
+                    height: 2px;
+                    background-color: $pink;
+                    transition: width 0.3s ease-in-out;
+                }
+                &:hover {
+                    &::after {
+                        width: 100%;
+                    }
                 }
             }
         }
@@ -93,9 +165,30 @@ header {
         }
     }
 
+    @media screen and (max-width: 1024px) {
+        ul.active {
+            transform: translateX(0);
+        }
+    }
+
     #burger-icon {
+        path {
+            stroke: $white !important;
+        }
+        path:last-child {
+            display: none;
+        }
         @include respond-to(desktop-medium) {
             display: none;
+        }
+    }
+    #burger-icon.active {
+        path:first-child {
+            display: none;
+        }
+        path:last-child {
+            display: block;
+            transform: translate(5px, 5px);
         }
     }
 }

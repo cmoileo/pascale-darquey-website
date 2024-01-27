@@ -81,10 +81,10 @@ $pink: #D9A6C8;
 .main-parag {
     font-family: 'Apertura Regular';
     @include respond-to(mobile) {
-        font-size: ptr(10, mobile);
+        font-size: ptr(16, mobile);
     }
     @include respond-to(tablet) {
-        font-size: ptr(15, tablet);
+        font-size: ptr(16, tablet);
     }
     @include respond-to(desktop-medium) {
         font-size: ptr(20, desktop-large);

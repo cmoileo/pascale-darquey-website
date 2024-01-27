@@ -1,10 +1,10 @@
 "use client"
 import { useEffect } from "react";
-import toggle from "../../hooks/toggle";
+import headerManager from "@/hooks/headerManager";
 export default function Home() {
   useEffect(() => {
     return () => {
-      toggle()
+      headerManager()
     };
   }, []);
   return (

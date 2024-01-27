@@ -1,4 +1,4 @@
-export default function toggle() {
+export default function headerManager() {
   const toggleElements = document.querySelectorAll(".toggle");
 
   if (toggleElements) {
@@ -17,6 +17,16 @@ export default function toggle() {
           }, 100)
         }
       });
+    });
+  }
+
+  const burgerIcon = document.querySelector("#burger-icon");
+  const menu = document.querySelector("header > ul");
+
+  if (burgerIcon && menu) {
+    burgerIcon.addEventListener("click", () => {
+      burgerIcon.classList.toggle("active");
+      menu.classList.toggle("active");
     });
   }
 }
