@@ -3,6 +3,7 @@
   display: flex;
   border: 2px solid $pink;
   transition: .3s ease-in-out;
+  width: fit-content;
   @include respond-to(mobile) {
     padding: ptr(10, mobile) ptr(30, mobile);
     border-radius: ptr(10, mobile);
@@ -21,6 +22,19 @@
     color: $heavy_blue;
   }
 }
+.secondary-cta.blue {
+  border: 2px solid $heavy_blue;
+  path {
+    transition: .2s ease-in-out;
+  }
+  &:hover {
+    background-color: $heavy_blue;
+    color: $white;
+    path {
+      stroke: $white;
+    }
+  }
+}
 .main-cta {
   @extend .main-parag !optional;
   display: flex;
@@ -28,6 +42,7 @@
   transition: .3s ease-in-out;
   background-color: $orange;
   cursor: pointer;
+  width: fit-content;
 
     @include respond-to(mobile) {
         padding: ptr(10, mobile) ptr(30, mobile);
@@ -41,9 +56,18 @@
         padding: ptr(10, desktop-large) ptr(30, desktop-large);
         border-radius: ptr(10, desktop-large);
     }
+  path {
+    transition: .2s ease-in-out;
+  }
+  svg {
+    margin-bottom: 3px;
+  }
 
     &:hover {
         background-color: transparent;
         color: $orange;
+        path {
+            stroke: $orange;
+        }
     }
 }
