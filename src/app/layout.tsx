@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import {StrictMode} from "react";
 import "../assets/style/main.scss";
 
 export const metadata: Metadata = {
@@ -17,9 +18,11 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <Header></Header>
-        <main>
+        <StrictMode>
+          <main>
             {children}
-        </main>
+          </main>
+        </StrictMode>
         <Footer></Footer>
       </body>
     </html>
