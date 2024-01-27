@@ -7,7 +7,4 @@ export default function Home() {
       headerManager()
     };
   }, []);
-  return (
-    <h1 className="main-title">Hello</h1>
-  );
 }

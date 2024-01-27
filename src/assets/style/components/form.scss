@@ -28,12 +28,14 @@ form {
     width: 100%;
     border: none;
     border-bottom: 1px solid $heavy_blue;
-    opacity: 50%;
     background-color: transparent;
     font-size: ptr(20, mobile);
     color: $heavy_blue;
     outline: none;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    &::placeholder {
+      opacity: 50%;
+    }
 
     @include respond-to(mobile) {
       font-size: ptr(15, mobile);
@@ -49,7 +51,7 @@ form {
     }
 
     &:focus {
-      border-bottom: 1px solid $orange;
+      border-bottom: 1px solid $pink;
     }
   }
   input, label, textarea {

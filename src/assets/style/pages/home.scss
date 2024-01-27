@@ -1,0 +1,18 @@
+.section-1  {
+  img {
+    @include respond-to(mobile) {
+      width: 100%;
+      border-bottom-right-radius: 100px;
+      height: ptr(490, mobile);
+      object-fit: cover;
+    }
+    @include respond-to(tablet) {
+      height: ptr(490, tablet);
+    }
+    @include respond-to(desktop-medium) {
+      width: ptr(1060, desktop-medium);
+      height: ptr(650, desktop-medium);
+      border-bottom-right-radius: 400px;
+    }
+  }
+}

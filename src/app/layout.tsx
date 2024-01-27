@@ -3,6 +3,7 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import {StrictMode} from "react";
 import "../assets/style/main.scss";
+import Section1 from "@/homeComponents/Section1";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -21,6 +22,7 @@ export default function RootLayout({
         <StrictMode>
           <main>
             {children}
+            <Section1></Section1>
           </main>
         </StrictMode>
         <Footer></Footer>
