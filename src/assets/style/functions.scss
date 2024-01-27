@@ -1,5 +1,5 @@
 $screen-sizes: (
-        desktop-large: 1920,
+        desktop-large: 1512,
         desktop-medium: 1200,
         tablet: 769,
         mobile: 300,
@@ -11,7 +11,7 @@ $screen-sizes: (
 
 @function ptr($valueInPixels, $screenType: desktop-large) {
   $referenceWidth: map-get($screen-sizes, $screenType);
-  $ratio: calc($valueInPixels / $referenceWidth) * 100vw;
+  $ratio: calc($valueInPixels / 1512) * 100vw;
   @return #{$ratio};
 
 }

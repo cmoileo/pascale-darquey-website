@@ -47,7 +47,7 @@ $pink: #D9A6C8;
     @include respond-to(tablet) {
         font-size: ptr(40, tablet);
     }
-    @include respond-to(desktop-large) {
+    @include respond-to(desktop-medium) {
         font-size: ptr(60, desktop-large);
     }
 }
@@ -60,7 +60,7 @@ $pink: #D9A6C8;
     @include respond-to(tablet) {
         font-size: ptr(30, tablet);
     }
-    @include respond-to(desktop-large) {
+    @include respond-to(desktop-medium) {
         font-size: ptr(40, desktop-large);
     }
 }
@@ -73,7 +73,7 @@ $pink: #D9A6C8;
     @include respond-to(tablet) {
         font-size: ptr(20, tablet);
     }
-    @include respond-to(desktop-large) {
+    @include respond-to(desktop-medium) {
         font-size: ptr(30, desktop-large);
     }
 }
@@ -86,7 +86,7 @@ $pink: #D9A6C8;
     @include respond-to(tablet) {
         font-size: ptr(15, tablet);
     }
-    @include respond-to(desktop-large) {
+    @include respond-to(desktop-medium) {
         font-size: ptr(20, desktop-large);
     }
 }
@@ -99,12 +99,12 @@ $pink: #D9A6C8;
     @include respond-to(tablet) {
         font-size: ptr(10, tablet);
     }
-    @include respond-to(desktop-large) {
+    @include respond-to(desktop-medium) {
         font-size: ptr(15, desktop-large);
     }
 }
 
-$side_margin_desktop: 150;
+$side_margin_desktop: 100;
 $side_margin_mobile: 25;
 
 .side_margin {

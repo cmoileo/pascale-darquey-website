@@ -1,0 +1,41 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: ptr(25, desktop-large) ptr($side_margin_desktop, desktop-large);
+    background-color: $heavy_blue;
+
+    ul {
+        display: flex;
+        align-items: center;
+        @include respond-to(mobile) {
+            display: none;
+            flex-direction: column;
+            gap: ptr(20, mobile);
+        }
+        @include respond-to(tablet) {
+            display: none;
+            gap: ptr(20, tablet);
+        }
+        @include respond-to(desktop-medium) {
+            display: flex;
+            flex-direction: row;
+            gap: ptr(55, desktop-large);
+        }
+
+        .has-submenu {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            cursor: pointer;
+            svg {
+                transition: transform 0.3s ease-in-out;
+            }
+        }
+        .has-submenu.active {
+            svg {
+                transform: rotate(180deg);
+            }
+        }
+    }
+}
