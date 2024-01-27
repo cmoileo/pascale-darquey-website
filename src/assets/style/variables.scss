@@ -4,6 +4,22 @@ $white: #E5F3FF;
 $orange: #E57300;
 $pink: #D9A6C8;
 
+.heavy_blue {
+    color: $heavy_blue;
+}
+.light_blue {
+    color: $light_blue;
+}
+.white {
+    color: $white;
+}
+.orange {
+    color: $orange;
+}
+.pink {
+    color: $pink;
+}
+
 @font-face {
     font-family: 'Kunkun Regular';
     src: url('../fonts/KunKun-Bold.ttf') format('truetype');
@@ -85,5 +101,23 @@ $pink: #D9A6C8;
     }
     @include respond-to(desktop-large) {
         font-size: ptr(15, desktop-large);
+    }
+}
+
+$side_margin_desktop: 150;
+$side_margin_mobile: 25;
+
+.side_margin {
+    @include respond-to(mobile) {
+        margin-left: ptr($side_margin_mobile, mobile);
+        margin-right: ptr($side_margin_mobile, mobile);
+    }
+    @include respond-to(tablet) {
+        margin-left: ptr($side_margin_mobile, tablet);
+        margin-right: ptr($side_margin_mobile, tablet)
+    }
+    @include respond-to(desktop-large) {
+        margin-left: ptr($side_margin_desktop, desktop-large);
+        margin-right: ptr($side_margin_desktop, desktop-large);
     }
 }
