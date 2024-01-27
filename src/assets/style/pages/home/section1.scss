@@ -1,0 +1,62 @@
+.section-1  {
+  position: relative;
+  img {
+    @include respond-to(mobile) {
+      width: 100%;
+      border-bottom-right-radius: 100px;
+      height: ptr(490, mobile);
+      object-fit: cover;
+    }
+    @include respond-to(tablet) {
+      height: ptr(490, tablet);
+    }
+    @include respond-to(desktop-medium) {
+      width: ptr(900, desktop-medium);
+      height: ptr(650, desktop-medium);
+      border-bottom-right-radius: 400px;
+    }
+  }
+  .main-wrapper {
+    background-color: $orange;
+    position: absolute;
+    right: 0;
+    clip-path: polygon(0.586% 70.651%, 0.586% 70.651%, 0.027% 61.878%, 0.469% 53.016%, 1.891% 44.248%, 4.268% 35.759%, 7.579% 27.732%, 11.8% 20.351%, 16.908% 13.801%, 22.881% 8.265%, 29.695% 3.927%, 37.327% 0.971%, 37.327% 0.971%, 44.119% 0.101%, 50.289% 1.21%, 55.915% 4.012%, 61.076% 8.223%, 65.851% 13.555%, 70.318% 19.723%, 74.556% 26.441%, 78.644% 33.423%, 82.66% 40.384%, 86.683% 47.037%, 86.683% 47.037%, 89.938% 52.138%, 93.236% 57.387%, 96.402% 62.745%, 99.259% 68.173%, 101.629% 73.631%, 103.337% 79.08%, 104.204% 84.481%, 104.055% 89.794%, 102.713% 94.98%, 100% 100%, 100% 100%, 96.347% 104.017%, 92.163% 106.626%, 87.531% 108.02%, 82.534% 108.392%, 77.254% 107.934%, 71.775% 106.84%, 66.18% 105.303%, 60.552% 103.514%, 54.974% 101.668%, 49.528% 99.956%, 49.528% 99.956%, 43.368% 98.291%, 37.012% 96.741%, 30.641% 95.157%, 24.432% 93.391%, 18.564% 91.295%, 13.216% 88.72%, 8.565% 85.516%, 4.791% 81.536%, 2.072% 76.63%, 0.586% 70.651%);
+    @include respond-to(mobile) {
+      top: 80%;
+      padding: ptr(50, mobile) ptr(50, mobile) ptr(50, mobile) ptr(50, mobile);
+    }
+    @include respond-to(tablet) {
+      top: 60%;
+    }
+    @include respond-to(desktop-medium) {
+      padding: ptr(100, desktop-medium) ptr(180, desktop-medium) ptr(70, desktop-medium) ptr(100, desktop-medium);
+      top: 20%;
+    }
+    p {
+      margin-top: 20px;
+      @include respond-to(desktop-medium) {
+        padding-left: 40px;
+      }
+    }
+  }
+  .secondary-wrapper {
+    position: absolute;
+    right: 3%;
+    bottom: 5%;
+    display: none;
+    flex-direction: column;
+    gap: 15px;
+
+    @include respond-to(desktop-medium) {
+      display: flex;
+    }
+
+    .main-cta, .secondary-cta {
+      align-items: center;
+      gap: 10px;
+    }
+    .secondary-cta {
+
+    }
+  }
+}

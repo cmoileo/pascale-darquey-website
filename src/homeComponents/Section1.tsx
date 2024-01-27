@@ -13,7 +13,7 @@ export default function Section1() {
                <p className="main-parag white">Coaching – Supervision <br/> Management et communication interpersonnelle</p>
            </div>
            <div className="secondary-wrapper">
-               <p className="secondary-parag blue">Une question ?</p>
+               <p className="main-parag blue">Une question ?</p>
                <a className="main-cta white" href="tel:+33 683888143">
                    <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                        <path
