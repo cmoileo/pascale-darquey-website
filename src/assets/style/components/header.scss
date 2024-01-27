@@ -23,19 +23,79 @@ header {
             gap: ptr(55, desktop-large);
         }
 
+        a {
+            &::after {
+                content: "";
+                display: block;
+                width: 0;
+                height: 2px;
+                background-color: $pink;
+                transition: width 0.3s ease-in-out;
+            }
+            &:hover {
+                &::after {
+                    width: 100%;
+                }
+            }
+        }
+
         .has-submenu {
             display: flex;
             align-items: center;
             gap: 5px;
             cursor: pointer;
+            position: relative;
             svg {
                 transition: transform 0.3s ease-in-out;
+            }
+            .submenu {
+                display: none;
+                position: absolute;
+                top: 400%;
+                flex-direction: column;
+                transform: translateY(-30px);
+                transition: .3s ease-in-out;
+                opacity: 0;
+                gap: 0;
+                @include respond-to(desktop-medium) {
+                    padding: ptr(30, desktop-large) ptr(30, desktop-large);
+                    border-radius: ptr(15, desktop-large);
+                    width: ptr(120, desktop-large);
+                    background-color: $heavy_blue;
+                    align-items: flex-start;
+                }
+                li {
+                    padding: 15px 0;
+                    width: -webkit-fill-available;
+
+                    a {
+                        width: fit-content;
+                        display: block;
+                    }
+
+                    &:hover {
+                        a::after {
+                            width: 100%;
+                        }
+                    }
+                }
             }
         }
         .has-submenu.active {
             svg {
                 transform: rotate(-180deg);
             }
+            .submenu {
+                display: flex;
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    }
+
+    #burger-icon {
+        @include respond-to(desktop-medium) {
+            display: none;
         }
     }
 }

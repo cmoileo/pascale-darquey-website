@@ -2,6 +2,7 @@
   @extend .main-parag !optional;
   display: flex;
   border: 2px solid $pink;
+  transition: .3s ease-in-out;
   @include respond-to(mobile) {
     padding: ptr(10, mobile) ptr(30, mobile);
     border-radius: ptr(10, mobile);
@@ -13,5 +14,10 @@
   @include respond-to(desktop-medium) {
     padding: ptr(10, desktop-large) ptr(30, desktop-large);
     border-radius: ptr(10, desktop-large);
+  }
+
+  &:hover {
+    background-color: $pink;
+    color: $heavy_blue;
   }
 }

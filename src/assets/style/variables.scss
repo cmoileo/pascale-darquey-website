@@ -42,7 +42,7 @@ $pink: #D9A6C8;
 .main-title {
     font-family: 'Kunkun Bold';
     @include respond-to(mobile) {
-        font-size: ptr(30, mobile);
+        font-size: ptr(25, mobile);
     }
     @include respond-to(tablet) {
         font-size: ptr(40, tablet);
