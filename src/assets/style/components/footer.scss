@@ -1,0 +1,91 @@
+footer {
+  background-color: $heavy_blue;
+  transform: translateY(50%);
+
+  @include respond-to(mobile) {
+    margin-top: ptr(50, mobile);
+  }
+  @include respond-to(tablet) {
+    margin-top: ptr(50, tablet);
+  }
+  @include respond-to(desktop-medium) {
+    margin-top: ptr(90, desktop-medium);
+  }
+
+  form {
+    transform: translateY(-50%);
+  }
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include respond-to(mobile) {
+      transform: translateY(-40%);
+    }
+    @include respond-to(tablet) {
+      transform: translateY(-40%);
+    }
+    @include respond-to(desktop-medium) {
+      transform: translateY(-80%);
+    }
+
+    .main-title {
+      border-bottom: 2px solid $pink;
+      text-align: center;
+      @include respond-to(mobile) {
+        padding-bottom: ptr(25, mobile);
+        width: 70%;
+      }
+      @include respond-to(tablet) {
+        padding-bottom: ptr(25, tablet);
+        width: 60%;
+      }
+      @include respond-to(desktop-medium) {
+        padding-bottom: ptr(30, desktop-medium);
+        width: 40%;
+      }
+    }
+
+    .main-footer-nav {
+      display: flex;
+      @include respond-to(mobile) {
+        margin-top: ptr(25, mobile);
+        flex-direction: column;
+        gap: ptr(20, mobile);
+        align-items: center;
+      }
+      @include respond-to(tablet) {
+        margin-top: ptr(25, tablet);
+        gap: ptr(20, tablet);
+      }
+      @include respond-to(desktop-medium) {
+        margin-top: ptr(30, desktop-medium);
+        gap: ptr(50, desktop-medium);
+        flex-direction: row;
+      }
+    }
+
+    .secondary-footer-nav {
+      display: flex;
+      align-items: center;
+      @include respond-to(mobile) {
+        margin-top: ptr(25, mobile);
+        gap: ptr(20, mobile);
+        flex-direction: column;
+      }
+      @include respond-to(tablet) {
+        margin-top: ptr(25, tablet);
+        gap: ptr(20, tablet);
+      }
+      @include respond-to(desktop-medium) {
+        margin-top: ptr(30, desktop-medium);
+        gap: ptr(50, desktop-medium);
+        flex-direction: row;
+      }
+      a {
+        opacity: 75%;
+      }
+    }
+  }
+}

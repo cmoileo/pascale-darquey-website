@@ -84,23 +84,23 @@ $pink: #D9A6C8;
         font-size: ptr(16, mobile);
     }
     @include respond-to(tablet) {
-        font-size: ptr(16, tablet);
+        font-size: ptr(18, tablet);
     }
     @include respond-to(desktop-medium) {
-        font-size: ptr(20, desktop-large);
+        font-size: ptr(24, desktop-large);
     }
 }
 
 .secondary-parag {
     font-family: 'Apertura Regular';
     @include respond-to(mobile) {
-        font-size: ptr(8, mobile);
+        font-size: ptr(14, mobile);
     }
     @include respond-to(tablet) {
-        font-size: ptr(10, tablet);
+        font-size: ptr(16, tablet);
     }
     @include respond-to(desktop-medium) {
-        font-size: ptr(15, desktop-large);
+        font-size: ptr(20, desktop-large);
     }
 }
 
