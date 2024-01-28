@@ -9,11 +9,11 @@
     margin-left: ptr($side_margin_mobile, tablet);
     margin-right: ptr($side_margin_mobile, tablet);
   }
-    @include respond-to(desktop-medium) {
-        margin-top: ptr(200, desktop-large);
-        margin-left: ptr($side_margin_desktop, desktop-large);
-        margin-right: ptr($side_margin_desktop, desktop-large);
-    }
+  @include respond-to(desktop-medium) {
+    margin-top: ptr(200, desktop-large);
+    margin-left: ptr($side_margin_desktop, desktop-large);
+    margin-right: ptr($side_margin_desktop, desktop-large);
+  }
 
   .first-wrapper {
     display: flex;

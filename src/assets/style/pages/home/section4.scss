@@ -1,0 +1,97 @@
+.section-4 {
+  @include respond-to(mobile) {
+    margin-top: ptr(70, mobile);
+  }
+  @include respond-to(tablet) {
+    margin-top: ptr(70, tablet);
+  }
+  @include respond-to(desktop-medium) {
+    margin-top: ptr(250, desktop-large);
+  }
+  .carousel-wrapper {
+    display: flex;
+    overflow-x: auto;
+    @include respond-to(mobile) {
+      gap: ptr(50, mobile);
+    }
+    @include respond-to(tablet) {
+      gap: ptr(50, tablet);
+    }
+    @include respond-to(desktop-medium) {
+      gap: ptr(300, desktop-large);
+    }
+    &::-webkit-scrollbar {
+      display: none;
+    }
+    .carousel-item {
+      display: flex;
+      @include respond-to(mobile) {
+        flex-direction: column;
+        gap: ptr(20, mobile);
+      }
+      @include respond-to(tablet) {
+        gap: ptr(20, tablet);
+      }
+      @include respond-to(desktop-medium) {
+        gap: ptr(75, desktop-large);
+        flex-direction: row;
+        align-items: center;
+        object-fit: cover;
+      }
+      img {
+        object-fit: cover;
+        border-radius: 300px;
+        @include respond-to(mobile) {
+          width: ptr(150, mobile);
+          height: ptr(150, mobile);
+        }
+        @include respond-to(tablet) {
+          width: ptr(150, tablet);
+          height: ptr(150, tablet);
+        }
+        @include respond-to(desktop-medium) {
+          width: ptr(300, desktop-large);
+          height: ptr(300, desktop-large);
+        }
+      }
+      .right {
+        @include respond-to(desktop-medium) {
+          width: ptr(450, desktop-large);
+        }
+        h3 {
+          @include respond-to(mobile) {
+            margin-bottom: ptr(20, mobile);
+          }
+          @include respond-to(tablet) {
+            margin-bottom: ptr(20, tablet);
+          }
+          @include respond-to(desktop-medium) {
+            margin-bottom: ptr(30, desktop-medium);
+          }
+        }
+      }
+    }
+    .carousel-item:first-child {
+      @include respond-to(mobile) {
+        padding-left: ptr($side_margin_mobile, mobile);
+      }
+      @include respond-to(tablet) {
+        padding-left: ptr($side_margin_mobile, tablet);
+      }
+      @include respond-to(desktop-medium) {
+        padding-left: ptr($side_margin_desktop, desktop-large);
+      }
+    }
+    .carousel-item:last-child {
+      @include respond-to(mobile) {
+        padding-right: ptr($side_margin_mobile, mobile);
+      }
+      @include respond-to(tablet) {
+        padding-right: ptr($side_margin_mobile, tablet);
+      }
+      @include respond-to(desktop-medium) {
+        padding-right: ptr($side_margin_desktop, desktop-large);
+      }
+    }
+  }
+}
