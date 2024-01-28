@@ -10,7 +10,7 @@
     margin-right: ptr($side_margin_mobile, tablet);
   }
     @include respond-to(desktop-medium) {
-        margin-top: ptr(100, desktop-large);
+        margin-top: ptr(200, desktop-large);
         margin-left: ptr($side_margin_desktop, desktop-large);
         margin-right: ptr($side_margin_desktop, desktop-large);
     }
@@ -46,6 +46,41 @@
             height: ptr(700, desktop-large);
             border-radius: ptr(25, desktop-large);
         }
+    }
+  }
+
+  .second-wrapper {
+    display: flex;
+    @include respond-to(mobile) {
+      margin-top: ptr(75, mobile);
+      flex-direction: column-reverse;
+      gap: ptr(50, mobile);
+    }
+    @include respond-to(tablet) {
+      margin-top: ptr(75, tablet);
+      gap: ptr(50, tablet);
+    }
+    @include respond-to(desktop-medium) {
+      margin-top: ptr(150, desktop-large);
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .left {
+      @include respond-to(desktop-medium) {
+        width: 50%;
+      }
+      h3 {
+        @include respond-to(mobile) {
+          margin-bottom: ptr(35, mobile);
+        }
+        @include respond-to(tablet) {
+          margin-bottom: ptr(35, tablet);
+        }
+        @include respond-to(desktop-medium) {
+          margin-bottom: ptr(50, desktop-large);
+        }
+      }
     }
   }
 }
