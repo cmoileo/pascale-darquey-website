@@ -80,6 +80,7 @@ $pink: #D9A6C8;
 
 .main-parag {
     font-family: 'Apertura Regular';
+    line-height: 150%;
     @include respond-to(mobile) {
         font-size: ptr(16, mobile);
     }
