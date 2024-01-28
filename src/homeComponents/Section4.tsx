@@ -41,6 +41,7 @@ export default function Section4() {
                     })
                 }
             </div>
+            <div className="sticky-block"></div>
         </section>
     )
 }

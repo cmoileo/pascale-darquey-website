@@ -82,5 +82,24 @@
         }
       }
     }
+    .right {
+      img {
+        @include respond-to(mobile) {
+          height: ptr(250, mobile);
+          object-fit: cover;
+          border-radius: ptr(20, mobile);
+          width: 100%;
+        }
+        @include respond-to(tablet) {
+          height: ptr(330, tablet);
+          border-radius: ptr(20, tablet);
+        }
+        @include respond-to(desktop-medium) {
+          height: ptr(700, desktop-large);
+          width: ptr(700, desktop-large);
+          border-radius: ptr(20, desktop-large);
+        }
+      }
+    }
   }
 }

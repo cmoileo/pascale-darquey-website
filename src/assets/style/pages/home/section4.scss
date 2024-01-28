@@ -11,6 +11,8 @@
   .carousel-wrapper {
     display: flex;
     overflow-x: auto;
+    position: sticky;
+    top: 200px;
     @include respond-to(mobile) {
       gap: ptr(50, mobile);
     }
@@ -93,5 +95,9 @@
         padding-right: ptr($side_margin_desktop, desktop-large);
       }
     }
+  }
+
+  .sticky-block {
+    height: 4000px;
   }
 }
