@@ -14,7 +14,7 @@
     position: sticky;
     top: 200px;
     @include respond-to(mobile) {
-      gap: ptr(50, mobile);
+      gap: ptr(75, mobile);
     }
     @include respond-to(tablet) {
       gap: ptr(50, tablet);
@@ -98,6 +98,14 @@
   }
 
   .sticky-block {
-    height: ptr(2000, desktop-large);
+    @include respond-to(mobile) {
+      height: ptr(1500, mobile);
+    }
+    @include respond-to(tablet) {
+      height: ptr(1500, tablet);
+    }
+    @include respond-to(desktop-medium) {
+      height: ptr(2000, desktop-large);
+    }
   }
 }

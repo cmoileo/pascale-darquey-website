@@ -5,7 +5,7 @@ export default function section5() {
     const questions = [
         {
             question: "Comment se déroule un accompagnement ?",
-            answer: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
+            answer: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
         },
         {
             question: "Comment se déroule un accompagnement ?",
@@ -33,7 +33,7 @@ export default function section5() {
                             return (
                                 <div className="question" key={index}>
                                     <p className="main-parag heavy_blue">{item.question}</p>
-                                    <p className="secondary-parag heavy_blue">{item.answer}</p>
+                                    <p className="answer secondary-parag heavy_blue">{item.answer}</p>
                                 </div>
                             )
                         })

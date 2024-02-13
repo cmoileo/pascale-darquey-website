@@ -24,4 +24,5 @@ export default function carouselManager() {
     }
 
     window.addEventListener('scroll', handleWindowScroll);
+    window.addEventListener('touchmove', handleWindowScroll);
 }

@@ -1,3 +1,102 @@
 .section-5 {
+  @include respond-to(mobile) {
+    margin-top: ptr(70, mobile);
+    margin-left: ptr($side_margin_mobile, mobile);
+    margin-right: ptr($side_margin_mobile, mobile);
+  }
+  @include respond-to(tablet) {
+    margin-top: ptr(70, tablet);
+    margin-left: ptr($side_margin_mobile, tablet);
+    margin-right: ptr($side_margin_mobile, tablet);
+  }
+  @include respond-to(desktop-medium) {
+    margin-top: ptr(200, desktop-large);
+    margin-left: ptr($side_margin_desktop, desktop-large);
+    margin-right: ptr($side_margin_desktop, desktop-large);
+  }
 
+  h3 {
+    margin-bottom: 75px;
+  }
+
+  .wrapper {
+    display: flex;
+
+    @include respond-to(mobile) {
+      flex-direction: column;
+      gap: ptr(50, mobile);
+    }
+    @include respond-to(tablet) {
+      gap: ptr(50, tablet);
+    }
+    @include respond-to(desktop-medium) {
+      justify-content: space-between;
+      flex-direction: row;
+    }
+
+    .left {
+      img {
+        width: 100%;
+        object-fit: cover;
+        border-radius: 15px;
+        height: 100%;
+      }
+      @include respond-to(mobile) {
+        height: ptr(250, mobile);
+        border-radius: ptr(25, mobile);
+        width: 100%;
+        border-radius: ptr(25, mobile);
+      }
+        @include respond-to(tablet) {
+          height: ptr(250, tablet);
+          border-radius: ptr(25, tablet);
+        }
+        @include respond-to(desktop-medium) {
+          height: ptr(600, desktop-large);
+          width: ptr(600, desktop-large);
+          border-radius: ptr(25, desktop-large);
+          border: ptr(10, desktop-large);
+        }
+    }
+
+    .right {
+      display: flex;
+      flex-direction: column;
+      @include respond-to(mobile) {
+        width: 100%;
+        gap: ptr(50, mobile);
+      }
+      @include respond-to(tablet) {
+        width: 100%;
+        gap: ptr(50, tablet);
+      }
+      @include respond-to(desktop-medium) {
+        width: ptr(800, desktop-large);
+        gap: ptr(0, desktop-large);
+        justify-content: space-between;
+        min-height: 100%;
+      }
+      .question {
+        height: 20px;
+        overflow: hidden;
+        transition: .3s ease-in-out;
+        padding: 30px 15px;
+        border-radius: 15px;
+        background-color: white;
+        cursor: pointer;
+
+        .answer {
+          opacity: 0;
+          transition: .3s ease-in-out;
+        }
+      }
+      .question.active {
+        height: 100px;
+
+        .answer {
+          opacity: 1;
+        }
+      }
+    }
+  }
 }
