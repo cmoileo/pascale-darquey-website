@@ -9,9 +9,8 @@ export default function carouselManager() {
         if (carouselWrapper) {
             const scrollPercentage = (window.scrollY - carrouselWrapperTopOnPage + carouselInitialTop) / stickyBlock.offsetHeight
             const maxScroll = carouselWrapper.scrollWidth - carouselWrapper.clientWidth;
-            const scrollLeftValue = scrollPercentage * maxScroll * 2;
+            const scrollLeftValue = scrollPercentage * maxScroll * 1.5;
             carouselWrapper.scrollLeft = scrollLeftValue
-            console.log(scrollPercentage, maxScroll, scrollLeftValue)
         }
     }
 
