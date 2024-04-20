@@ -11,13 +11,13 @@ export default function header() {
                                   strokeLinecap="round" strokeLinejoin="round"/>
                         </svg>
                         <ul className="submenu">
-                            <li><a className="secondary-parag white">Offre 1</a></li>
-                            <li><a className="secondary-parag white">Offre 2</a></li>
-                            <li><a className="secondary-parag white">Offre 3</a></li>
+                            <li><a href={"/#offres"} className="secondary-parag white">Offre 1</a></li>
+                            <li><a href={"/#offres"} className="secondary-parag white">Offre 2</a></li>
+                            <li><a href={"/#offres"} className="secondary-parag white">Offre 3</a></li>
                         </ul>
                     </li>
-                    <a href="" className="main-parag white">Qui suis-je ?</a>
-                    <a href="" className="secondary-cta white">Contact</a>
+                    <a href={"/#qui-suis-je"} className="main-parag white">Qui suis-je ?</a>
+                    <a href={"/#contact"} className="secondary-cta white">Contact</a>
                 </ul>
             <svg id='burger-icon' width="24" height="24" viewBox="0 0 24 24" fill="none"
                  xmlns="http://www.w3.org/2000/svg">

@@ -124,7 +124,7 @@
             height: ptr(330, tablet);
           }
           @include respond-to(desktop-medium) {
-            width: ptr(400, desktop-medium);
+            min-width: ptr(400, desktop-medium);
             height: ptr(400, desktop-medium);
             border-radius: 20px;
           }
@@ -164,7 +164,7 @@
           }
         }
         .wrapper {
-          display: flex;
+          display: none;
           justify-content: space-between;
           width: 100%;
           position: relative;
@@ -242,15 +242,15 @@
               border-radius: 20px;
               object-fit: cover;
               @include respond-to(mobile) {
-                min-width: 100%;
+                width: 100%;
                 height: ptr(300, mobile);
               }
               @include respond-to(tablet) {
-                min-width: 100%;
+                width: 100%;
                 height: ptr(300, tablet);
               }
               @include respond-to(desktop-medium) {
-                min-width: ptr(400, desktop-medium);
+                width: ptr(400, desktop-medium);
                 height: ptr(400, desktop-medium);
               }
             }
@@ -258,25 +258,32 @@
 
           .floating {
             position: absolute;
-            background-color: $heavy_blue;
             display: flex;
             justify-content: center;
             align-items: center;
-            bottom: -20%;
             left: 45%;
             transform: translateX(-50%);
-            clip-path: polygon( 48.05% 0.005%,48.05% 0.005%,52.732% 0.241%,57.264% 1.072%,61.639% 2.444%,65.85% 4.306%,69.888% 6.606%,73.746% 9.292%,77.416% 12.311%,80.89% 15.612%,84.16% 19.143%,87.219% 22.851%,87.219% 22.851%,90.059% 26.702%,92.676% 30.72%,95.023% 34.887%,97.055% 39.183%,98.725% 43.587%,99.985% 48.081%,100.789% 52.643%,101.091% 57.255%,100.843% 61.897%,100% 66.548%,100% 66.548%,98.583% 70.934%,96.634% 75.002%,94.209% 78.766%,91.363% 82.239%,88.153% 85.436%,84.633% 88.371%,80.86% 91.056%,76.89% 93.505%,72.778% 95.733%,68.581% 97.753%,68.581% 97.753%,64.482% 99.481%,60.3% 100.959%,56.056% 102.157%,51.773% 103.042%,47.471% 103.582%,43.173% 103.745%,38.9% 103.501%,34.675% 102.816%,30.519% 101.66%,26.453% 100%,26.453% 100%,22.548% 97.86%,18.931% 95.341%,15.607% 92.473%,12.582% 89.291%,9.863% 85.825%,7.454% 82.11%,5.363% 78.178%,3.594% 74.061%,2.154% 69.792%,1.048% 65.403%,1.048% 65.403%,0.333% 61.04%,0.018% 56.681%,0.092% 52.345%,0.542% 48.048%,1.355% 43.81%,2.52% 39.648%,4.022% 35.579%,5.851% 31.621%,7.994% 27.792%,10.437% 24.109%,10.437% 24.109%,13.302% 20.334%,16.38% 16.716%,19.665% 13.312%,23.154% 10.174%,26.839% 7.357%,30.717% 4.917%,34.782% 2.907%,39.029% 1.382%,43.454% 0.396%,48.05% 0.005% );
+
+            svg {
+              width: 110%;
+              height: 110%;
+              position: absolute;
+            }
+
             @include respond-to(mobile) {
               width: 100%;
+              bottom: -5%;
               height: ptr(145, mobile);
             }
             @include respond-to(tablet) {
               width: 100%;
+              bottom: -5%;
               height: ptr(145, tablet);
             }
-            @include respond-to(desktop-medium) {
+          @include respond-to(desktop-medium) {
               width: ptr(345, desktop-medium);
               height: ptr(145, desktop-medium);
+              bottom: -20%;
             }
 
             p {
@@ -285,6 +292,9 @@
               opacity: 85%;
             }
           }
+        }
+        .wrapper.active {
+          display: flex;
         }
       }
     }

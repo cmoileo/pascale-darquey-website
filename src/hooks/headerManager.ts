@@ -4,7 +4,7 @@ export default function headerManager() {
   if (toggleElements) {
     toggleElements.forEach((toggleElement) => {
       toggleElement.addEventListener("click", () => {
-        const subMenu = toggleElement.querySelector(".submenu")
+        const subMenu: any = toggleElement.querySelector(".submenu")
         if (subMenu && toggleElement.classList.contains("active")) {
           toggleElement.classList.toggle("active");
           setTimeout(() => {
@@ -28,5 +28,14 @@ export default function headerManager() {
       burgerIcon.classList.toggle("active");
       menu.classList.toggle("active");
     });
+
+    const anchors = document.querySelectorAll("header a");
+
+    anchors.forEach((anchor) => {
+        anchor.addEventListener("click", () => {
+            burgerIcon.classList.remove("active");
+            menu.classList.remove("active");
+        });
+    })
   }
 }

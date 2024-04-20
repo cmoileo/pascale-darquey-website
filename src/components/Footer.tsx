@@ -4,13 +4,16 @@ import {useState} from "react";
 
 export default function footer() {
     const [isSent, setIsSent] = useState(false)
-    const handleSubmit = async (e: FormEvent) => {
+    const handleSubmit = async (e: any) => {
         e.preventDefault()
-        const target = {
-            Prénom: e.currentTarget.Prénom.value,
-            Nom: e.currentTarget.Nom.value,
-            Email: e.currentTarget.Email.value,
-            Message: e.currentTarget.Message.value,
+        let target
+        if (e.currentTarget.Prénom && e.currentTarget.Nom && e.currentTarget.Email && e.currentTarget.Message) {
+            target = {
+                Prénom: e.currentTarget.Prénom.value,
+                Nom: e.currentTarget.Nom.value,
+                Email: e.currentTarget.Email.value,
+                Message: e.currentTarget.Message.value,
+            }
         }
 
         try {
@@ -28,7 +31,7 @@ export default function footer() {
     }
     return (
         <footer>
-            <h2 className={"main-title orange"}>Pour me contacter</h2>
+            <h2 id="contact" className={"main-title orange"}>Pour me contacter</h2>
             {
                 isSent ? <h3 className="validation-message secondary-title heavy_blue">Votre message a bien été envoyé, vous allez bientôt être contacté.</h3> : <form onSubmit={handleSubmit}>
                     <input type="text" name="Prénom" placeholder="Prénom" required/>

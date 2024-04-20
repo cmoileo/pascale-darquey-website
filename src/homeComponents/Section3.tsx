@@ -4,7 +4,7 @@ import Img from "../../public/images/image 6.png"
 
 export default function Section3() {
     return  (
-        <section className="section-3">
+        <section id="qui-suis-je" className="section-3">
             <div className="first-wrapper">
                 <h2 className='secondary-title orange'>QUI SUIS-JE ?</h2>
                 <Image src={Pascale} alt={"Pascale Darquey souriant et regardant la caméra"}></Image>
