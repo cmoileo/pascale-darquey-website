@@ -4,6 +4,7 @@ import headerManager from "@/hooks/headerManager";
 import carouselManager from "@/hooks/CarouselManager";
 import useFAQManager from "@/hooks/FAQManager";
 import swiperJS from "@/hooks/swiperJS";
+import offresManager from "@/hooks/offresManager";
 export default function Home() {
   useEffect(() => {
     return () => {
@@ -11,6 +12,7 @@ export default function Home() {
       carouselManager()
       useFAQManager()
       swiperJS()
+      offresManager()
     };
   }, []);
 }

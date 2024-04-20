@@ -8,6 +8,7 @@ import Section3 from "@/homeComponents/Section3";
 import Section4 from "@/homeComponents/Section4";
 import Section5 from "@/homeComponents/Section5";
 import Section6 from "@/homeComponents/Section6";
+import Section7 from "@/homeComponents/Section7";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -27,9 +28,10 @@ export default function RootLayout({
               <main>
                   {children}
                   <Section1></Section1>
+                  <Section7></Section7>
+                  <Section5></Section5>
                   <Section3></Section3>
                   <Section4></Section4>
-                  <Section5></Section5>
                   <Section6></Section6>
               </main>
           </StrictMode>

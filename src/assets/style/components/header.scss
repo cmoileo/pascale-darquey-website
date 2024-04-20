@@ -5,7 +5,7 @@ header {
     background-color: $heavy_blue;
     position: sticky;
     top: 0;
-    z-index: 2;
+    z-index: 10;
 
     @include respond-to(mobile) {
         padding: ptr(20, mobile) ptr($side_margin_mobile, mobile)

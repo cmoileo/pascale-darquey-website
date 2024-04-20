@@ -105,7 +105,7 @@
       height: ptr(1500, tablet);
     }
     @include respond-to(desktop-medium) {
-      height: ptr(1500, desktop-large);
+      height: ptr(1200, desktop-large);
     }
   }
 }
