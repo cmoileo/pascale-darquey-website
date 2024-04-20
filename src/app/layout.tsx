@@ -20,21 +20,21 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body>
-        <Header></Header>
-        <StrictMode>
-          <main>
-            {children}
-            <Section1></Section1>
-            <Section3></Section3>
-            <Section4></Section4>
-            <Section5></Section5>
-            <Section6></Section6>
-          </main>
-        </StrictMode>
-        <Footer></Footer>
-      </body>
-    </html>
+      <html lang="en">
+          <body>
+          <Header></Header>
+          <StrictMode>
+              <main>
+                  {children}
+                  <Section1></Section1>
+                  <Section3></Section3>
+                  <Section4></Section4>
+                  <Section5></Section5>
+                  <Section6></Section6>
+              </main>
+          </StrictMode>
+          <Footer></Footer>
+          </body>
+      </html>
   );
 }
