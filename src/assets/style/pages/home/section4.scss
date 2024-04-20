@@ -99,13 +99,13 @@
 
   .sticky-block {
     @include respond-to(mobile) {
-      height: ptr(1500, mobile);
+      height: ptr(1200, mobile);
     }
     @include respond-to(tablet) {
       height: ptr(1500, tablet);
     }
     @include respond-to(desktop-medium) {
-      height: ptr(2000, desktop-large);
+      height: ptr(1500, desktop-large);
     }
   }
 }

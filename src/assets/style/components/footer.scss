@@ -12,6 +12,11 @@ footer {
     margin-top: ptr(90, desktop-medium);
   }
 
+  > h2 {
+    text-align: center;
+    transform: translateY(-300px);
+  }
+
   form {
     transform: translateY(-50%);
   }

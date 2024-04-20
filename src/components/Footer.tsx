@@ -28,6 +28,7 @@ export default function footer() {
     }
     return (
         <footer>
+            <h2 className={"main-title orange"}>Pour me contacter</h2>
             {
                 isSent ? <h3 className="validation-message secondary-title heavy_blue">Votre message a bien été envoyé, vous allez bientôt être contacté.</h3> : <form onSubmit={handleSubmit}>
                     <input type="text" name="Prénom" placeholder="Prénom" required/>
