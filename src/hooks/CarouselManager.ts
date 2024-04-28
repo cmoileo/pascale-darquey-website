@@ -1,5 +1,4 @@
 export default function carouselManager() {
-    console.log("carousel loaded !")
     let isActive = true
     const stickyBlock: HTMLDivElement | null = document.querySelector('.sticky-block');
     const carouselWrapper = document.querySelector('.section-4 .carousel-wrapper');

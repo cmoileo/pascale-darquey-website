@@ -235,64 +235,7 @@ export default function Section7() {
                         le coach seront prévues afin de trouver les axes d’amélioration et de définir un plan pour y
                         parvenir.</p>
                 </div>
-                <div className="carousel-wrapper">
-                    <div className="container">
-                        <div className="carousel-item">
-                            <div className="left">
-                                <Image src={Image9} alt={"le coaching"}></Image>
-                            </div>
-                            <div className="right">
-                                <p className="main-parag heavy_blue">Lorem ipsum dolor sit amet consectetur adipisicing
-                                    elit. Quisquam, voluptatum.</p>
-                            </div>
-                        </div>
-                        <div className="carousel-item">
-                            <div className="left">
-                                <Image src={Image9} alt={"le coaching"}></Image>
-                            </div>
-                            <div className="right">
-                                <p className="main-parag heavy_blue">Lorem ipsum dolor sit amet consectetur adipisicing
-                                    elit. Quisquam, voluptatum.</p>
-                            </div>
-                        </div>
-                        <div className="carousel-item">
-                            <div className="left">
-                                <Image src={Image9} alt={"le coaching"}></Image>
-                            </div>
-                            <div className="right">
-                                <p className="main-parag heavy_blue">Lorem ipsum dolor sit amet consectetur adipisicing
-                                    elit. Quisquam, voluptatum.</p>
-                            </div>
-                        </div>
-                        <div className="carousel-item">
-                            <div className="left">
-                                <Image src={Image9} alt={"le coaching"}></Image>
-                            </div>
-                            <div className="right">
-                                <p className="main-parag heavy_blue">Lorem ipsum dolor sit amet consectetur adipisicing
-                                    elit. Quisquam, voluptatum.</p>
-                            </div>
-                        </div>
-                        <div className="carousel-item">
-                            <div className="left">
-                                <Image src={Image9} alt={"le coaching"}></Image>
-                            </div>
-                            <div className="right">
-                                <p className="main-parag heavy_blue">Lorem ipsum dolor sit amet consectetur adipisicing
-                                    elit. Quisquam, voluptatum.</p>
-                            </div>
-                        </div>
-                        <div className="carousel-item">
-                            <div className="left">
-                                <Image src={Image9} alt={"le coaching"}></Image>
-                            </div>
-                            <div className="right">
-                                <p className="main-parag heavy_blue">Lorem ipsum dolor sit amet consectetur adipisicing
-                                    elit. Quisquam, voluptatum.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+
                 <div className="carousel-wrapper">
                     <div className="container">
                         <div className="carousel-item">

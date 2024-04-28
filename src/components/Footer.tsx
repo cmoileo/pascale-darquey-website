@@ -53,14 +53,13 @@ export default function footer() {
                 </div>
                 <h2 className={"main-title white"}>Darqpa Consulting</h2>
                 <nav className="main-footer-nav">
-                <a className={"main-parag white"} href="">Les offres</a>
-                    <a className={"main-parag white"} href="">Qui suis-je ?</a>
-                    <a className={"main-parag white"} href="">Contact</a>
+                    <a className={"main-parag white"} href="/#offres">Les offres</a>
+                    <a className={"main-parag white"} href="/#qui-suis-je">Qui suis-je ?</a>
+                    <a className={"main-parag white"} href="/#contact">Contact</a>
                 </nav>
                 <nav className="secondary-footer-nav">
-                    <a className={"secondary-parag white"} href="">Politique de coockies</a>
-                    <a className={"secondary-parag white"} href="">Mentions légales</a>
-                    <a className={"secondary-parag white"} href="">Conditions Générales d'Utilisation</a>
+                    <a className={"secondary-parag white"} href="/mentions-legales/">Mentions légales</a>
+                    <a className={"secondary-parag white"} href="/cgv/">Conditions Générales d'Utilisation</a>
                 </nav>
             </div>
         </footer>
