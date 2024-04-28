@@ -20,7 +20,7 @@
       gap: ptr(50, tablet);
     }
     @include respond-to(desktop-medium) {
-      gap: ptr(300, desktop-large);
+      gap: ptr(200, desktop-large);
     }
     &::-webkit-scrollbar {
       display: none;
@@ -35,7 +35,7 @@
         gap: ptr(20, tablet);
       }
       @include respond-to(desktop-medium) {
-        gap: ptr(75, desktop-large);
+        gap: ptr(45, desktop-large);
         flex-direction: row;
         align-items: center;
         object-fit: cover;
@@ -52,8 +52,8 @@
           height: ptr(150, tablet);
         }
         @include respond-to(desktop-medium) {
-          width: ptr(300, desktop-large);
-          height: ptr(300, desktop-large);
+          width: ptr(150, desktop-large);
+          height: ptr(150, desktop-large);
         }
       }
       .right {
@@ -68,7 +68,7 @@
             margin-bottom: ptr(20, tablet);
           }
           @include respond-to(desktop-medium) {
-            margin-bottom: ptr(30, desktop-medium);
+            margin-bottom: ptr(15, desktop-medium);
           }
         }
       }
