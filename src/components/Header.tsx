@@ -2,7 +2,7 @@
 export default function header() {
     return (
         <header>
-            <h1 className="main-title white">Darqpa Consulting</h1>
+            <a href="/"><h1 className="main-title white">Pascale Darquey</h1></a>
                 <ul>
                     <li className="main-parag white has-submenu toggle">
                         <p>Les offres</p>

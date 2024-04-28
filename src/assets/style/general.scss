@@ -27,3 +27,21 @@ hr {
 html, body {
   scroll-behavior: smooth;
 }
+
+.legales {
+  @include respond-to(mobile) {
+    margin-left: ptr($side_margin_mobile, mobile);
+    margin-right: ptr($side_margin_mobile, mobile);
+    margin-top: ptr(35, mobile);
+  }
+  @include respond-to(tablet) {
+    margin-left: ptr($side_margin_mobile, tablet);
+    margin-right: ptr($side_margin_mobile, tablet);
+    margin-top: ptr(35, tablet);
+  }
+  @include respond-to(desktop-large) {
+    margin-left: ptr($side_margin_desktop, desktop-large);
+    margin-right: ptr($side_margin_desktop, desktop-large);
+    margin-top: ptr(100, desktop-large);
+  }
+}
