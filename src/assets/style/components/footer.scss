@@ -38,6 +38,22 @@ footer {
       transform: translateY(-80%);
     }
 
+    > .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        @include respond-to(mobile) {
+            gap: ptr(15, mobile);
+        }
+        @include respond-to(tablet) {
+            gap: ptr(15, tablet);
+        }
+        @include respond-to(desktop-medium) {
+            gap: ptr(15, desktop-medium);
+          margin-bottom: 30px
+        }
+    }
+
     .main-title {
       border-bottom: 2px solid $pink;
       text-align: center;

@@ -47,9 +47,13 @@ export default function footer() {
                 </form>
             }
             <div className="wrapper">
+                <div className="container">
+                    <p className="main-parag white">Par téléphone :</p>
+                    <a href="tel:0683888143" className="secondary-cta white">06 83 88 81 43</a>
+                </div>
                 <h2 className={"main-title white"}>Darqpa Consulting</h2>
                 <nav className="main-footer-nav">
-                    <a className={"main-parag white"} href="">Les offres</a>
+                <a className={"main-parag white"} href="">Les offres</a>
                     <a className={"main-parag white"} href="">Qui suis-je ?</a>
                     <a className={"main-parag white"} href="">Contact</a>
                 </nav>

@@ -29,9 +29,12 @@ export default function RootLayout({
                   {children}
                   <Section1></Section1>
                   <Section7></Section7>
+                  <hr></hr>
                   {/*<Section5></Section5>*/}
                   <Section3></Section3>
+                  <hr></hr>
                   <Section4></Section4>
+                  <hr></hr>
                   <Section6></Section6>
               </main>
           </StrictMode>

@@ -1,16 +1,16 @@
 .section-3 {
   @include respond-to(mobile) {
-    padding-top: ptr(70, mobile);
+    padding-top: ptr(35, mobile);
     margin-left: ptr($side_margin_mobile, mobile);
     margin-right: ptr($side_margin_mobile, mobile);
   }
   @include respond-to(tablet) {
-    padding-top: ptr(70, tablet);
+    padding-top: ptr(35, tablet);
     margin-left: ptr($side_margin_mobile, tablet);
     margin-right: ptr($side_margin_mobile, tablet);
   }
   @include respond-to(desktop-medium) {
-    padding-top: ptr(200, desktop-large);
+    padding-top: ptr(100, desktop-large);
     margin-left: ptr($side_margin_desktop, desktop-large);
     margin-right: ptr($side_margin_desktop, desktop-large);
   }
