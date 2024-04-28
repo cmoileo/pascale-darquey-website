@@ -1,4 +1,5 @@
 export default function headerManager() {
+  console.log("header loaded !")
   const toggleElements = document.querySelectorAll(".toggle");
 
   if (toggleElements) {
