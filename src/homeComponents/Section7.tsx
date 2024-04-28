@@ -48,6 +48,64 @@ export default function Section7() {
                         le coach seront prévues afin de trouver les axes d’amélioration et de définir un plan pour y
                         parvenir.</p>
                 </div>
+                <div className="carousel-wrapper">
+                    <div className="container">
+                        <div className="carousel-item">
+                            <div className="left">
+                                <Image src={Image9} alt={"le coaching"}></Image>
+                            </div>
+                            <div className="right">
+                                <p className="main-parag heavy_blue">Lorem ipsum dolor sit amet consectetur adipisicing
+                                    elit. Quisquam, voluptatum.</p>
+                            </div>
+                        </div>
+                        <div className="carousel-item">
+                            <div className="left">
+                                <Image src={Image9} alt={"le coaching"}></Image>
+                            </div>
+                            <div className="right">
+                                <p className="main-parag heavy_blue">Lorem ipsum dolor sit amet consectetur adipisicing
+                                    elit. Quisquam, voluptatum.</p>
+                            </div>
+                        </div>
+                        <div className="carousel-item">
+                            <div className="left">
+                                <Image src={Image9} alt={"le coaching"}></Image>
+                            </div>
+                            <div className="right">
+                                <p className="main-parag heavy_blue">Lorem ipsum dolor sit amet consectetur adipisicing
+                                    elit. Quisquam, voluptatum.</p>
+                            </div>
+                        </div>
+                        <div className="carousel-item">
+                            <div className="left">
+                                <Image src={Image9} alt={"le coaching"}></Image>
+                            </div>
+                            <div className="right">
+                                <p className="main-parag heavy_blue">Lorem ipsum dolor sit amet consectetur adipisicing
+                                    elit. Quisquam, voluptatum.</p>
+                            </div>
+                        </div>
+                        <div className="carousel-item">
+                            <div className="left">
+                                <Image src={Image9} alt={"le coaching"}></Image>
+                            </div>
+                            <div className="right">
+                                <p className="main-parag heavy_blue">Lorem ipsum dolor sit amet consectetur adipisicing
+                                    elit. Quisquam, voluptatum.</p>
+                            </div>
+                        </div>
+                        <div className="carousel-item">
+                            <div className="left">
+                                <Image src={Image9} alt={"le coaching"}></Image>
+                            </div>
+                            <div className="right">
+                                <p className="main-parag heavy_blue">Lorem ipsum dolor sit amet consectetur adipisicing
+                                    elit. Quisquam, voluptatum.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div className="bottom">
                     <ul className="anchors-c">
                         <li className={"secondary-title orange active"}>Coaching individuel en entreprise</li>
@@ -177,6 +235,122 @@ export default function Section7() {
                         le coach seront prévues afin de trouver les axes d’amélioration et de définir un plan pour y
                         parvenir.</p>
                 </div>
+                <div className="carousel-wrapper">
+                    <div className="container">
+                        <div className="carousel-item">
+                            <div className="left">
+                                <Image src={Image9} alt={"le coaching"}></Image>
+                            </div>
+                            <div className="right">
+                                <p className="main-parag heavy_blue">Lorem ipsum dolor sit amet consectetur adipisicing
+                                    elit. Quisquam, voluptatum.</p>
+                            </div>
+                        </div>
+                        <div className="carousel-item">
+                            <div className="left">
+                                <Image src={Image9} alt={"le coaching"}></Image>
+                            </div>
+                            <div className="right">
+                                <p className="main-parag heavy_blue">Lorem ipsum dolor sit amet consectetur adipisicing
+                                    elit. Quisquam, voluptatum.</p>
+                            </div>
+                        </div>
+                        <div className="carousel-item">
+                            <div className="left">
+                                <Image src={Image9} alt={"le coaching"}></Image>
+                            </div>
+                            <div className="right">
+                                <p className="main-parag heavy_blue">Lorem ipsum dolor sit amet consectetur adipisicing
+                                    elit. Quisquam, voluptatum.</p>
+                            </div>
+                        </div>
+                        <div className="carousel-item">
+                            <div className="left">
+                                <Image src={Image9} alt={"le coaching"}></Image>
+                            </div>
+                            <div className="right">
+                                <p className="main-parag heavy_blue">Lorem ipsum dolor sit amet consectetur adipisicing
+                                    elit. Quisquam, voluptatum.</p>
+                            </div>
+                        </div>
+                        <div className="carousel-item">
+                            <div className="left">
+                                <Image src={Image9} alt={"le coaching"}></Image>
+                            </div>
+                            <div className="right">
+                                <p className="main-parag heavy_blue">Lorem ipsum dolor sit amet consectetur adipisicing
+                                    elit. Quisquam, voluptatum.</p>
+                            </div>
+                        </div>
+                        <div className="carousel-item">
+                            <div className="left">
+                                <Image src={Image9} alt={"le coaching"}></Image>
+                            </div>
+                            <div className="right">
+                                <p className="main-parag heavy_blue">Lorem ipsum dolor sit amet consectetur adipisicing
+                                    elit. Quisquam, voluptatum.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className="carousel-wrapper">
+                    <div className="container">
+                        <div className="carousel-item">
+                            <div className="left">
+                                <Image src={Image9} alt={"le coaching"}></Image>
+                            </div>
+                            <div className="right">
+                                <p className="main-parag heavy_blue">Lorem ipsum dolor sit amet consectetur adipisicing
+                                    elit. Quisquam, voluptatum.</p>
+                            </div>
+                        </div>
+                        <div className="carousel-item">
+                            <div className="left">
+                                <Image src={Image9} alt={"le coaching"}></Image>
+                            </div>
+                            <div className="right">
+                                <p className="main-parag heavy_blue">Lorem ipsum dolor sit amet consectetur adipisicing
+                                    elit. Quisquam, voluptatum.</p>
+                            </div>
+                        </div>
+                        <div className="carousel-item">
+                            <div className="left">
+                                <Image src={Image9} alt={"le coaching"}></Image>
+                            </div>
+                            <div className="right">
+                                <p className="main-parag heavy_blue">Lorem ipsum dolor sit amet consectetur adipisicing
+                                    elit. Quisquam, voluptatum.</p>
+                            </div>
+                        </div>
+                        <div className="carousel-item">
+                            <div className="left">
+                                <Image src={Image9} alt={"le coaching"}></Image>
+                            </div>
+                            <div className="right">
+                                <p className="main-parag heavy_blue">Lorem ipsum dolor sit amet consectetur adipisicing
+                                    elit. Quisquam, voluptatum.</p>
+                            </div>
+                        </div>
+                        <div className="carousel-item">
+                            <div className="left">
+                                <Image src={Image9} alt={"le coaching"}></Image>
+                            </div>
+                            <div className="right">
+                                <p className="main-parag heavy_blue">Lorem ipsum dolor sit amet consectetur adipisicing
+                                    elit. Quisquam, voluptatum.</p>
+                            </div>
+                        </div>
+                        <div className="carousel-item">
+                            <div className="left">
+                                <Image src={Image9} alt={"le coaching"}></Image>
+                            </div>
+                            <div className="right">
+                                <p className="main-parag heavy_blue">Lorem ipsum dolor sit amet consectetur adipisicing
+                                    elit. Quisquam, voluptatum.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div className="bottom">
                     <ul className="anchors-c">
                         <li className={"secondary-title orange active"}>Coaching individuel en entreprise</li>
@@ -205,7 +379,7 @@ export default function Section7() {
                             <a className={"main-cta white"} href="/#contact">Me contacter</a>
                         </div>
                         <div className="right">
-                        <Image src={Image9} alt={"Des gens suivant un coaching autour d'une table"}></Image>
+                            <Image src={Image9} alt={"Des gens suivant un coaching autour d'une table"}></Image>
                         </div>
                         {/*<div className="floating">*/}
                         {/*    <svg width="367" height="148" viewBox="0 0 367 148" fill="none"*/}
@@ -305,6 +479,64 @@ export default function Section7() {
                         équipes ou aux managers qu’aux étudiants ou encore leurs parents. Des sessions de travail avec
                         le coach seront prévues afin de trouver les axes d’amélioration et de définir un plan pour y
                         parvenir.</p>
+                </div>
+                <div className="carousel-wrapper">
+                    <div className="container">
+                        <div className="carousel-item">
+                            <div className="left">
+                                <Image src={Image9} alt={"le coaching"}></Image>
+                            </div>
+                            <div className="right">
+                                <p className="main-parag heavy_blue">Lorem ipsum dolor sit amet consectetur adipisicing
+                                    elit. Quisquam, voluptatum.</p>
+                            </div>
+                        </div>
+                        <div className="carousel-item">
+                            <div className="left">
+                                <Image src={Image9} alt={"le coaching"}></Image>
+                            </div>
+                            <div className="right">
+                                <p className="main-parag heavy_blue">Lorem ipsum dolor sit amet consectetur adipisicing
+                                    elit. Quisquam, voluptatum.</p>
+                            </div>
+                        </div>
+                        <div className="carousel-item">
+                            <div className="left">
+                                <Image src={Image9} alt={"le coaching"}></Image>
+                            </div>
+                            <div className="right">
+                                <p className="main-parag heavy_blue">Lorem ipsum dolor sit amet consectetur adipisicing
+                                    elit. Quisquam, voluptatum.</p>
+                            </div>
+                        </div>
+                        <div className="carousel-item">
+                            <div className="left">
+                                <Image src={Image9} alt={"le coaching"}></Image>
+                            </div>
+                            <div className="right">
+                                <p className="main-parag heavy_blue">Lorem ipsum dolor sit amet consectetur adipisicing
+                                    elit. Quisquam, voluptatum.</p>
+                            </div>
+                        </div>
+                        <div className="carousel-item">
+                            <div className="left">
+                                <Image src={Image9} alt={"le coaching"}></Image>
+                            </div>
+                            <div className="right">
+                                <p className="main-parag heavy_blue">Lorem ipsum dolor sit amet consectetur adipisicing
+                                    elit. Quisquam, voluptatum.</p>
+                            </div>
+                        </div>
+                        <div className="carousel-item">
+                            <div className="left">
+                                <Image src={Image9} alt={"le coaching"}></Image>
+                            </div>
+                            <div className="right">
+                                <p className="main-parag heavy_blue">Lorem ipsum dolor sit amet consectetur adipisicing
+                                    elit. Quisquam, voluptatum.</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div className="bottom">
                     <ul className="anchors-c">

@@ -143,6 +143,77 @@
           gap: 200px;
         }
       }
+      .carousel-wrapper {
+        overflow-x: hidden;
+        > .container {
+          animation: scroll 20s infinite linear;
+          display: flex;
+          @include respond-to(mobile) {
+            margin-top: ptr(40, mobile);
+            gap: ptr(75, mobile);
+          }
+          @include respond-to(tablet) {
+            margin-top: ptr(40, tablet);
+            gap: ptr(50, tablet);
+          }
+          @include respond-to(desktop-medium) {
+            margin-top: ptr(50, desktop-large);
+            gap: ptr(100, desktop-large);
+          }
+          &::-webkit-scrollbar {
+            display: none;
+          }
+        }
+        .carousel-item {
+          display: flex;
+          transition: 300ms all linear;
+          @include respond-to(mobile) {
+            flex-direction: column;
+            gap: ptr(20, mobile);
+          }
+          @include respond-to(tablet) {
+            gap: ptr(20, tablet);
+          }
+          @include respond-to(desktop-medium) {
+            gap: ptr(45, desktop-large);
+            flex-direction: row;
+            align-items: center;
+            object-fit: cover;
+          }
+          img {
+            object-fit: cover;
+            border-radius: 300px;
+            @include respond-to(mobile) {
+              width: ptr(150, mobile);
+              height: ptr(150, mobile);
+            }
+            @include respond-to(tablet) {
+              width: ptr(150, tablet);
+              height: ptr(150, tablet);
+            }
+            @include respond-to(desktop-medium) {
+              width: ptr(150, desktop-large);
+              height: ptr(150, desktop-large);
+            }
+          }
+          .right {
+            @include respond-to(desktop-medium) {
+              width: ptr(450, desktop-large);
+            }
+            h3 {
+              @include respond-to(mobile) {
+                margin-bottom: ptr(20, mobile);
+              }
+              @include respond-to(tablet) {
+                margin-bottom: ptr(20, tablet);
+              }
+              @include respond-to(desktop-medium) {
+                margin-bottom: ptr(15, desktop-medium);
+              }
+            }
+          }
+        }
+      }
       .bottom {
         margin-top: 100px;
         .anchors-c {
@@ -302,4 +373,10 @@
       display: block;
     }
   }
+}
+
+
+@keyframes scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%)}
 }
