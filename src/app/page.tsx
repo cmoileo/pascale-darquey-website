@@ -7,15 +7,13 @@ import swiperJS from "../hooks/swiperJS";
 import offresManager from "../hooks/offresManager";
 import carouselAutoManager from "../hooks/CarouselAutoManager";
 export default function Home() {
-  console.log("home loaded 1 !")
-  return () => {
-    console.log("home loaded 2 !")
-    console.log(headerManager)
-    headerManager()
-    carouselManager()
-    useFAQManager()
-    swiperJS()
-    offresManager()
-    carouselAutoManager();
-  };
+  console.log("home loaded 1 without return !")
+  console.log("home loaded 2 !")
+  console.log(headerManager)
+  headerManager()
+  carouselManager()
+  useFAQManager()
+  swiperJS()
+  offresManager()
+  carouselAutoManager();
 }
