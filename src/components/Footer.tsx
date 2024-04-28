@@ -13,6 +13,7 @@ export default function footer() {
                 Nom: e.currentTarget.Nom.value,
                 Email: e.currentTarget.Email.value,
                 Message: e.currentTarget.Message.value,
+                Tel: e.currentTarget.Tel.value
             }
         }
 
@@ -31,12 +32,16 @@ export default function footer() {
     }
     return (
         <footer>
-            <h2 id="contact" className={"main-title orange"}>Pour me contacter</h2>
+            <div className="container">
+                <h2 id="contact" className={"main-title orange"}>Pour me contacter</h2>
+                <p className="main-parag heavy_blue">Par mail :</p>
+            </div>
             {
                 isSent ? <h3 className="validation-message secondary-title heavy_blue">Votre message a bien été envoyé, vous allez bientôt être contacté.</h3> : <form onSubmit={handleSubmit}>
                     <input type="text" name="Prénom" placeholder="Prénom" required/>
                     <input type="text" name="Nom" placeholder="Nom" required/>
                     <input type="email" name="Email" placeholder="Email" required/>
+                    <input type="tel" name="Tel" placeholder="Téléphone" required/>
                     <textarea name="Message" placeholder="Message" required/>
                     <button className="main-cta white" type="submit">Envoyer</button>
                 </form>

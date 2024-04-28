@@ -17,7 +17,8 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
             subject: 'Demande de contact',
             text: `
 Email : ${req.body.Email},
-Nom : ${req.body.Nom}
+Nom : ${req.body.Nom},
+Téléphone : ${req.body.Tel},
 Prénom : ${req.body.Prénom}
 Message : 
 
