@@ -13,7 +13,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
 
         const mailOptions = {
             from: 'leo.fezard33@gmail.com',
-            to: 'leo.fezard33@gmail.com',
+            to: 'pascale.darquey@gmail.com',
             subject: 'Demande de contact',
             text: `
 Email : ${req.body.Email},
