@@ -3,10 +3,10 @@ footer {
   transform: translateY(50%);
 
   @include respond-to(mobile) {
-    margin-top: ptr(50, mobile);
+    margin-top: ptr(-120, mobile);
   }
   @include respond-to(tablet) {
-    margin-top: ptr(50, tablet);
+    margin-top: ptr(-120, tablet);
   }
   @include respond-to(desktop-medium) {
     margin-top: ptr(90, desktop-medium);
@@ -14,7 +14,15 @@ footer {
 
   > .container {
     text-align: center;
-    transform: translateY(-22vw);
+    @include respond-to(mobile) {
+      transform: translateY(-80vw);
+    }
+    @include respond-to(tablet) {
+      transform: translateY(-80vw);
+    }
+    @include respond-to(desktop-medium) {
+      transform: translateY(-22vw);
+    }
     p {
       margin-top: 15px
     }
@@ -44,9 +52,11 @@ footer {
         align-items: center;
         @include respond-to(mobile) {
             gap: ptr(15, mobile);
+          margin-bottom: 30px
         }
         @include respond-to(tablet) {
             gap: ptr(15, tablet);
+          margin-bottom: 30px
         }
         @include respond-to(desktop-medium) {
             gap: ptr(15, desktop-medium);

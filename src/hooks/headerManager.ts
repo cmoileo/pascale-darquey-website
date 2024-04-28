@@ -1,5 +1,4 @@
 export default function headerManager() {
-  console.log("header loaded !")
   const toggleElements = document.querySelectorAll(".toggle");
 
   if (toggleElements) {
@@ -26,8 +25,14 @@ export default function headerManager() {
 
   if (burgerIcon && menu) {
     burgerIcon.addEventListener("click", () => {
-      burgerIcon.classList.toggle("active");
-      menu.classList.toggle("active");
+      console.log("clicked")
+      if (burgerIcon.classList.contains("active")) {
+        burgerIcon.classList.remove("active");
+        menu.classList.remove("active");
+      } else {
+        burgerIcon.classList.add("active");
+        menu.classList.add("active");
+      }
     });
 
     const anchors = document.querySelectorAll("header a");

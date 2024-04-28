@@ -1,7 +1,8 @@
 export default function carouselManager() {
+    console.log("carousel loaded !")
     let isActive = true
     const stickyBlock: HTMLDivElement | null = document.querySelector('.sticky-block');
-    const carouselWrapper = document.querySelector('.carousel-wrapper');
+    const carouselWrapper = document.querySelector('.section-4 .carousel-wrapper');
     if (carouselWrapper && stickyBlock) {
         const carrouselWrapperTopOnPage = carouselWrapper.getBoundingClientRect().top + window.scrollY
         const carouselStyle = window.getComputedStyle(carouselWrapper);
