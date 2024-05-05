@@ -59,7 +59,7 @@ export default function footer() {
                 </nav>
                 <nav className="secondary-footer-nav">
                     <a className={"secondary-parag white"} href="/mentions-legales/">Mentions légales</a>
-                    <a className={"secondary-parag white"} href="/cgv/">Conditions Générales d'Utilisation</a>
+                    <a className={"secondary-parag white"} href="/cgu/">Conditions Générales d'Utilisation</a>
                 </nav>
             </div>
         </footer>
