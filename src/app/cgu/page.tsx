@@ -81,24 +81,7 @@ export default function Page() {
             </p>
 
             <h1 className={"main-title"}>
-                ARTICLE 3 : COLLECTE DES DONNÉES
-            </h1>
-            <p><br/></p>
-            <p>
-                Le site assure à l&#39;Utilisateur une collecte et un traitement
-                d&#39;informations personnelles dans le respect de la vie privée
-                conformément à la loi n°78-17 du 6 janvier 1978 relative à
-                l&#39;informatique, aux fichiers et aux libertés.
-            </p>
-            <p><br/></p>
-            <p>
-                En vertu de la loi Informatique et Libertés, en date du 6 janvier 1978,
-                l&#39;Utilisateur dispose d&#39;un droit d&#39;accès, de rectification, de
-                suppression et d&#39;opposition de ses données personnelles.
-                L&#39;Utilisateur exerce ce droit :
-            </p>
-            <h1 className={"main-title"}>
-                ARTICLE 4 : PROPRIÉTÉ INTELLECTUELLE
+                ARTICLE 3 : PROPRIÉTÉ INTELLECTUELLE
             </h1>
             <p><br/></p>
             <p>
@@ -142,7 +125,7 @@ export default function Page() {
             </p>
             <p><br/></p>
             <h1 className={"main-title"}>
-                ARTICLE 5 : RESPONSABILITÉ
+                ARTICLE 4 : RESPONSABILITÉ
             </h1>
             <p><br/></p>
             <p>
@@ -187,7 +170,7 @@ export default function Page() {
             </p>
             <p><br/></p>
             <h1 className={"main-title"}>
-                ARTICLE 6 : LIENS HYPERTEXTES
+                ARTICLE 5 : LIENS HYPERTEXTES
             </h1>
             <p><br/></p>
             <p>
@@ -205,51 +188,7 @@ export default function Page() {
             </p>
             <p><br/></p>
             <h1 className={"main-title"}>
-                ARTICLE 7 : COOKIES
-            </h1>
-            <p><br/></p>
-            <p>
-                L’Utilisateur est informé que lors de ses visites sur le site, un cookie
-                peut s’installer automatiquement sur son logiciel de navigation.
-            </p>
-            <p><br/></p>
-            <p>
-                <a
-                    href="http://www.pascaledarquey.fr/mentions-legales"
-                    className="a"
-                    target="_blank"
-                >Les cookies sont de petits fichiers stockés temporairement sur le
-                    disque dur de l’ordinateur de l’Utilisateur par votre navigateur et qui
-                    sont nécessaires à l’utilisation du site https://</a
-                >www.pascaledarquey.fr/mentions-legales. Les cookies ne contiennent pas
-                d’information personnelle et ne peuvent pas être utilisés pour identifier
-                quelqu’un. Un cookie contient un identifiant unique, généré aléatoirement
-                et donc anonyme. Certains cookies expirent à la fin de la visite de
-                l’Utilisateur, d’autres restent.
-            </p>
-            <p><br/></p>
-            <p>
-                <a
-                    href="http://www.pascaledarquey.fr/mentions-legales"
-                    className="a"
-                    target="_blank"
-                >L’information contenue dans les cookies est utilisée pour améliorer le
-                    site https://</a
-                ><a href="http://www.pascaledarquey.fr/mentions-legales" target="_blank"
-            >www.pascaledarquey.fr/mentions-legales.</a
-            >
-            </p>
-            <p><br/></p>
-            <p>
-                En naviguant sur le site, L’Utilisateur les accepte.
-            </p>
-            <p>
-                L’Utilisateur pourra désactiver ces cookies par l’intermédiaire des
-                paramètres figurant au sein de son logiciel de navigation.
-            </p>
-            <p><br/></p>
-            <h1 className={"main-title"}>
-                ARTICLE 8 : DROIT APPLICABLE ET JURIDICTION COMPÉTENTE
+                ARTICLE 6 : DROIT APPLICABLE ET JURIDICTION COMPÉTENTE
             </h1>
             <p>
                 La législation française s&#39;applique au présent contrat. En cas
@@ -261,11 +200,6 @@ export default function Page() {
                 pouvez joindre l’éditeur aux coordonnées inscrites à l’ARTICLE 1.
             </p>
             <p><br/></p>
-            <p>
-                <a href="http://legalplace.fr/" className="a" target="_blank"
-                >CGU réalisées sur </a
-                ><a href="http://legalplace.fr/" target="_blank">http://legalplace.fr/</a>
-            </p>
         </main>
     )
 }
